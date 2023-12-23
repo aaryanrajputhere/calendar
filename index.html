@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calender">
+      <h1>Calendar</h1>
+      <div class="calendar__picture"></div>
+      <div class="container">
+        <select id="viewSelect" onchange="changeView()">
+          <option value="monthly">Monthly View</option>
+          <option value="weekly">Weekly View</option>
+        </select>
+
+        <select id="monthSelect" onchange="changeMonth()">
+          <option value="0">Jan</option>
+          <option value="1">Feb</option>
+          <option value="2">Mar</option>
+          <option value="3">Apr</option>
+          <option value="4">May</option>
+          <option value="5">Jun</option>
+          <option value="6">Jul</option>
+          <option value="7">Aug</option>
+          <option value="8">Sep</option>
+          <option value="9">Oct</option>
+          <option value="10">Nov</option>
+          <option value="11">Dec</option>
+        </select>
+
+        <div id="calendar" class="monthly-view">
+        </div>
+        <div id="wcalendar" class="-view">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
